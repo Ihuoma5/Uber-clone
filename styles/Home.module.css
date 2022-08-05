@@ -1,7 +1,16 @@
 .container {
   padding: 0 2rem;
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  height: 100vh;
+}
+.map {
+  background-color: red;
+  flex: 1;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

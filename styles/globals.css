@@ -14,7 +14,212 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.map {
+  background-color: red;
+  flex: 1;
+  height: 50;
+}
+.action-item {
+  flex: 1;
+  padding: 10px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  width: 10rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.name {
+  margin-right: 4rem;
+}
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.ActionButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.ActionButton {
+  background-color: lightgray;
+  font-size:x-large;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  transition: all .2s ease-in-out;
+}
+.ActionButton:hover {
+  transform: scale(1.1);
+}
+.ActionButtonImg {
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.input-button {
+  height: 5rem;
+  background-color: lightgrey;
+  font-size:x-large;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.search-wrapper{
+  background-color: white;
+  height: 100vh;
+}
+.ButtonContainerRide{
+  border-radius: 50%;
+  position: absolute;
+  top: .5rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.BackButton{
+  width: 2rem;
+  background-color: white;
+  box-shadow: 1px 1px #888888;
+  border-radius: 50%;
+  margin: 5px 10px;
+}
+.InputContainer{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+.FromToIcon {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  align-items: center;
+}
+.Circle {
+  width: 20px;
+}
+.Line {
+  height: 20px;
+}
+.Square {
+  width: 20px;
+}
+.InputBoxes {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+.input {
+  height: 70%;
+  background-color: lightgray;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+.PlusIcon{
+  width: 2rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.SavedPlaces {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  background-color: white;
+}
+.StarIcon {
+  width: 2rem;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.Button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 5px 10px;
+  padding: 7px 0px;
+  cursor: pointer;
+}
+.wrapperConfirm {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.RideContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.RideSelectorWrapper {
+  flex: 1;
+  overflow:scroll;
+  display: flex;
+  flex-direction: column;
+}
+.RideSelectorWrapper::-webkit-scrollbar {
+  display: none;
+}
+.Title {
+color: gray;
+font-size: small;
+margin: 0 auto;
+padding: 5px 0;
+}
+.CarList {
+  overflow: scroll;
+}
+.CarList::-webkit-scrollbar {
+  display: none;
+}
+.Car {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.CarImage{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 10px;
+}
+.CarDetails {
+  flex: 1;
+}
+.Service{
+  font-weight: bold;
+}
+.Time {
+  font-size: small;
+  color: rgb(73, 195, 235);
+}
+.Price {
+  font-size: medium;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -24,3 +229,7 @@ a {
     background: black;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
